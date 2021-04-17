@@ -1,8 +1,8 @@
 require 'rest-client'
 require 'json'
 
-firstBatch = RestClient.get 'https://www.googleapis.com/books/v1/users/102281797701392507828/bookshelves/0/volumes?maxResults=40'
-secondBatch = RestClient.get 'https://www.googleapis.com/books/v1/users/102281797701392507828/bookshelves/3/volumes?maxResults=40'
+firstBatch = RestClient.get 'https://www.googleapis.com/books/v1/users/102281797701392507828/bookshelves/2/volumes?maxResults=40'
+secondBatch = RestClient.get 'https://www.googleapis.com/books/v1/users/102281797701392507828/bookshelves/0/volumes?maxResults=40'
 
 firstJSON = JSON.parse(firstBatch)
 secondJSON = JSON.parse(secondBatch)
