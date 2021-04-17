@@ -6,6 +6,7 @@ ruby '2.7.2'
 # Added rest-client to seed database
 gem 'rest-client'
 gem 'json'
+gem 'dotenv'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
