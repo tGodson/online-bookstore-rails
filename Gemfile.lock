@@ -109,14 +109,13 @@ GEM
     mime-types-data (3.2021.0225)
     mini_magick (4.11.0)
     mini_mime (1.1.0)
-    mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)
     netrc (0.11.0)
     nio4r (2.5.7)
-    nokogiri (1.11.3)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.11.3-x86_64-linux)
       racc (~> 1.4)
+    pg (1.2.3)
     public_suffix (4.0.6)
     puma (4.3.7)
       nio4r (~> 2.0)
@@ -206,7 +205,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
@@ -215,6 +214,7 @@ DEPENDENCIES
   database_cleaner
   json
   listen (~> 3.2)
+  pg
   puma (~> 4.1)
   rack-cors
   rails (~> 6.0.3, >= 6.0.3.2)
@@ -226,7 +226,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.6.3p62
+   ruby 2.6.1p33
 
 BUNDLED WITH
-   2.1.4
+   2.2.16
