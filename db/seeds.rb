@@ -11,19 +11,17 @@ firstArray = firstJSON["items"]
 secondArray = secondJSON["items"]
 
 firstArray.each do |book|
-    Book.create(title: book["volumeInfo"]["title"],
-    subtitle: book["volumeInfo"]["subtitle"],
-    authors: book["volumeInfo"]["authors"].join(", "),
-    description: book["volumeInfo"]["description"],
-    img: book["volumeInfo"]["imageLinks"]["thumbnail"])
+  Book.create(title: book["volumeInfo"]["title"],
+              subtitle: book["volumeInfo"]["subtitle"],
+              authors: book["volumeInfo"]["authors"].join(", "),
+              description: book["volumeInfo"]["description"],
+              img: book["volumeInfo"]["imageLinks"]["thumbnail"])
 end
 
 secondArray.each do |book|
-    Book.create(title: book["volumeInfo"]["title"],
-    subtitle: book["volumeInfo"]["subtitle"],
-    authors: book["volumeInfo"]["authors"].join(", "),
-    description: book["volumeInfo"]["description"],
-    img: book["volumeInfo"]["imageLinks"]["thumbnail"])
+  Book.create(title: book["volumeInfo"]["title"],
+              subtitle: book["volumeInfo"]["subtitle"],
+              authors: book["volumeInfo"]["authors"].join(", "),
+              description: book["volumeInfo"]["description"],
+              img: book["volumeInfo"]["imageLinks"]["thumbnail"])
 end
-
-
