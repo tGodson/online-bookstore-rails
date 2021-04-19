@@ -24,12 +24,13 @@ To get a local copy up and running follow these simple example steps.
 Ruby: 2.6.5
 Rails: 6.0.3.2
 Postgres: >=9.5
+sqlite3
 
 ### Setup
 
 ~~~bash
 $ git clone https://github.com/tGodson/online-bookstore-rails.git
-$ cd car-rental-rails
+$ cd online-bookstore-rails
 ~~~
 
 Install gems with:
